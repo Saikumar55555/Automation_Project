@@ -22,6 +22,7 @@ public class LoginCredentials {
 		Thread.sleep(3000);
 		
 		//Giving Invalid Email and Valid Password
+		driver.findElement(By.cssSelector("button-2 edit-address-button"));
 		driver.findElement(By.xpath("//input[@id=\"Email\"]")).sendKeys("kumarsaikumar");
 		driver.findElement(By.xpath("//input[@id=\"Password\"]")).sendKeys("@#$aikumar123");
 		driver.findElement(By.xpath("//input[@id=\"RememberMe\"]")).submit();

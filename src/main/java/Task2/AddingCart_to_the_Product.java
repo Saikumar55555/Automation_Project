@@ -49,61 +49,12 @@ public class AddingCart_to_the_Product {
 		
 		//Go to Apparel & Shoes category and click on Casual Golf Belt, Add it to the Cart
 		
-		WebElement url = driver.findElement(By.xpath("(//input[@value='Add to cart'])"));
-		url.click();
 		
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("//h2[@class=\"product-title\"]//a[@href=\"/blue-and-green-sneaker\"]")).click();
-		driver.findElement(By.xpath("//input[@id=\"add-to-cart-button-28\"]")).click();
-		
-		Thread.sleep(3000);
-		
-		//Go to books category and click on Fiction Book, Add it to the Cart
-		
-		driver.findElement(By.xpath("//li[@class=\"inactive\"]//a[@href=\"/books\"]")).click();
-		WebElement friction = driver.findElement(By.xpath("//h2[@class=\"product-title\"]//a[@href=\"/fiction\"]"));
-		friction.click();
-		driver.findElement(By.xpath("//input[@id=\"add-to-cart-button-45\"]")).click();
-		
-		Thread.sleep(3000);
-		
-		//Go to Digital Downloads category and click on  Music 2, Add it to the Cart
-		
-		driver.findElement(By.xpath("//li[@class=\"inactive\"]//a[@href=\"/digital-downloads\"]")).click();
-		WebElement music = driver.findElement(By.xpath("//h2[@class=\"product-title\"]//a[@href=\"/music-album-1\"]"));
-		music.click();
-		driver.findElement(By.xpath("//input[@id=\"add-to-cart-button-51\"]")).click();
-		
-		Thread.sleep(3000);
-		
-		//Adding All those Products to the Cart
-		
-		driver.findElement(By.xpath("//a[@class=\"ico-cart\"]//span[@class=\"cart-qty\"]")).click();
-		Thread.sleep(3000);
-		
-		//Clicking On the Check Box	
-		
-		driver.findElement(By.xpath("(//input[@type=\"checkbox\"])[1]")).click();
-		driver.findElement(By.xpath("(//input[@type=\"checkbox\"])[2]")).click();
-		driver.findElement(By.xpath("(//input[@type=\"checkbox\"])[3]")).click();
-		
-		File srcfile3 =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcfile3, new File("C:\\Users\\RS-EMP\\eclipse-workspace\\AutomationProject\\Screenshot\\CartCompleted.jpg"));
-			
-		
-		
-		//After All We Have to Update Our Products
-		
-		driver.findElement(By.xpath("//input[@name=\"updatecart\"]")).click();
-		
-		
-		//Logout to the webpage	
-		//driver.findElement(By.xpath("//a[@class=\"ico-logout\"]")).click();
 		
 		
 		//We Have to TakeScreenShot at the end
 		
-	   File srcfile4 =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+	   File srcfile3 =((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	   FileUtils.copyFile(srcfile3, new File("C:\\\\Users\\\\RS-EMP\\\\eclipse-workspace\\\\AutomationProject\\\\Screenshot\\\\CartCompleted1243.jpg"));
 		
 	}
